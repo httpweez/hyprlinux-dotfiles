@@ -1,0 +1,325 @@
+* {
+  all: unset;
+  font-family: FiraCode Nerd Font;
+  transition: 0.3s;
+  font-size: 1.2rem;
+}
+
+.floating-notifications.background .notification-row {
+  padding: 1rem;
+}
+
+.floating-notifications.background .notification-row .notification-background {
+  border-radius: 0.5rem;
+  background-color: rgba(26, 20, 16, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #e8d8b8;
+  border: 1px solid #7a6040;
+}
+
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .notification {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .notification.critical {
+  border: 1px solid #c0622a;
+}
+
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .notification
+  .notification-content
+  .summary {
+  margin: 0.5rem;
+  color: #e8d8b8;
+  font-weight: bold;
+}
+
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .notification
+  .notification-content
+  .body {
+  margin: 0.5rem;
+  color: #a08060;
+}
+
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .notification
+  > *:last-child
+  > * {
+  min-height: 3rem;
+}
+
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .notification
+  > *:last-child
+  > *
+  .notification-action {
+  border-radius: 0.5rem;
+  color: #e8d8b8;
+  background-color: rgba(34, 27, 20, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid #7a6040;
+}
+
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .notification
+  > *:last-child
+  > *
+  .notification-action:hover {
+  background-color: #2e2318;
+}
+
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .notification
+  > *:last-child
+  > *
+  .notification-action:active {
+  background-color: #7a6040;
+}
+
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .close-button {
+  margin: 0.5rem;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  color: #e8d8b8;
+  background-color: #c0622a;
+}
+
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .close-button:hover {
+  color: #1a1410;
+}
+
+.floating-notifications.background
+  .notification-row
+  .notification-background
+  .close-button:active {
+  background-color: #d4a96a;
+}
+
+.control-center {
+  border-radius: 0.5rem;
+  margin: 1rem;
+  background-color: rgba(26, 20, 16, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  color: #e8d8b8;
+  padding: 1rem;
+  border: 1px solid #7a6040;
+}
+
+.control-center .widget-title {
+  color: #d4a96a;
+  font-weight: bold;
+}
+
+.control-center .widget-title button {
+  border-radius: 0.5rem;
+  color: #e8d8b8;
+  background-color: rgba(34, 27, 20, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid #7a6040;
+  padding: 0.5rem;
+}
+
+.control-center .widget-title button:hover {
+  background-color: #2e2318;
+}
+
+.control-center .widget-title button:active {
+  background-color: #7a6040;
+}
+
+.control-center .notification-row .notification-background {
+  border-radius: 0.5rem;
+  margin: 0.5rem 0;
+  background-color: rgba(34, 27, 20, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #e8d8b8;
+  border: 1px solid #7a6040;
+}
+
+.control-center .notification-row .notification-background .notification {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.control-center
+  .notification-row
+  .notification-background
+  .notification.critical {
+  border: 1px solid #c0622a;
+}
+
+.control-center
+  .notification-row
+  .notification-background
+  .notification
+  .notification-content {
+  color: #e8d8b8;
+}
+
+.control-center
+  .notification-row
+  .notification-background
+  .notification
+  .notification-content
+  .summary {
+  margin: 0.5rem;
+  color: #e8d8b8;
+  font-weight: bold;
+}
+
+.control-center
+  .notification-row
+  .notification-background
+  .notification
+  .notification-content
+  .body {
+  margin: 0.5rem;
+  color: #a08060;
+}
+
+.control-center
+  .notification-row
+  .notification-background
+  .notification
+  > *:last-child
+  > * {
+  min-height: 3rem;
+}
+
+.control-center
+  .notification-row
+  .notification-background
+  .notification
+  > *:last-child
+  > *
+  .notification-action {
+  border-radius: 0.5rem;
+  color: #e8d8b8;
+  background-color: rgba(34, 27, 20, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid #7a6040;
+}
+
+.control-center
+  .notification-row
+  .notification-background
+  .notification
+  > *:last-child
+  > *
+  .notification-action:hover {
+  background-color: #2e2318;
+}
+
+.control-center
+  .notification-row
+  .notification-background
+  .notification
+  > *:last-child
+  > *
+  .notification-action:active {
+  background-color: #7a6040;
+}
+
+.control-center .notification-row .notification-background .close-button {
+  margin: 0.5rem;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  color: #e8d8b8;
+  background-color: #c0622a;
+}
+
+.control-center .notification-row .notification-background .close-button:hover {
+  color: #1a1410;
+}
+
+.control-center
+  .notification-row
+  .notification-background
+  .close-button:active {
+  background-color: #d4a96a;
+}
+
+progressbar,
+progress,
+trough {
+  border-radius: 0.5rem;
+}
+
+.notification.critical progress {
+  background-color: #c0622a;
+}
+
+.notification.low progress,
+.notification.normal progress {
+  background-color: #8fbcaa;
+}
+
+trough {
+  background-color: #221b14;
+}
+
+.control-center trough {
+  background-color: #7a6040;
+}
+
+.control-center-dnd {
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+}
+
+.control-center-dnd slider {
+  background: #2e2318;
+  border-radius: 0.5rem;
+}
+
+.widget-dnd {
+  color: #a08060;
+}
+
+.widget-dnd > switch {
+  border-radius: 0.5rem;
+  background: #2e2318;
+  border: 1px solid #7a6040;
+}
+
+.widget-dnd > switch:checked slider {
+  background: #5a8a70;
+}
+
+.widget-dnd > switch slider {
+  background: #7a6040;
+  border-radius: 0.5rem;
+  margin: 0.25rem;
+}

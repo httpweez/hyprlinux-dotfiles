@@ -1,0 +1,32 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "type": "file",
+    "source": "~/.config/fastfetch/bill-logo.txt",
+    "color": {
+      "1": "white"
+    }
+  },
+  "modules": [
+    {
+      "type": "title",
+      "userColor": "white",
+      "hostColor": "white"
+    },
+    {
+      "type": "separator",
+      "color": "white"
+    },
+    { "type": "os", "keyColor": "white" },
+    { "type": "kernel", "keyColor": "white" },
+    { "type": "shell", "keyColor": "white" },
+    { "type": "icons", "keyColor": "white" },
+    { "type": "memory", "keyColor": "white" },
+    { "type": "disk", "keyColor": "white" },
+    "break",
+    {
+      "type": "colors",
+      "symbol": "circle"
+    }
+  ]
+}
