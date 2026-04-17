@@ -8,15 +8,8 @@
     }
   },
   "modules": [
-    {
-      "type": "title",
-      "userColor": "white",
-      "hostColor": "white"
-    },
-    {
-      "type": "separator",
-      "color": "white"
-    },
+    { "type": "title", "userColor": "white", "hostColor": "white" },
+    { "type": "separator", "color": "white" },
     { "type": "os", "keyColor": "white" },
     { "type": "kernel", "keyColor": "white" },
     { "type": "shell", "keyColor": "white" },
