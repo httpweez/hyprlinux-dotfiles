@@ -1,0 +1,101 @@
+/* ==================== APPRENTICE THEME (Fundo mais escuro) ==================== */
+@import "theme.css";
+
+/* Cores do Apprentice - Fundo mais escuro agora */
+@define-color main-bg      #1C1C1C;   /* ← fundo principal mais escuro */
+@define-color main-fg      #BCBCBC;
+@define-color main-br      #3C3C3C;   /* borda um pouco mais visível */
+
+@define-color accent       #8b6f47;   /* verde suave */
+@define-color red          #AF5F5F;
+@define-color green        #5F875F;
+@define-color yellow       #87875F;
+@define-color blue         #5F87AF;
+@define-color magenta      #5F5F87;
+@define-color cyan         #5F8787;
+
+@define-color hover-bg     #262626;   /* hover um pouco mais claro que o bg */
+@define-color hover-fg     #E0E0E0;
+
+* {
+    all: initial; /* Reset GTK theme */
+    color: @main-fg;
+}
+
+@import "styles/fonts.css";
+@import "styles/modules-center.css";
+@import "styles/modules-left.css";
+@import "styles/modules-right.css";
+@import "styles/states.css";
+
+.module {
+    margin-bottom: -1px;
+}
+
+#waybar {
+    background-color: transparent;
+    margin: 8px 12px 0px 12px;
+}
+
+#waybar > box {
+    margin: 4px;
+    background-color: @main-bg;
+    border-radius: 6px;
+    border: 0px solid @main-br;
+}
+
+button {
+    border-radius: 16px;
+    min-width: 16px;
+    padding: 0 10px;
+}
+
+button:hover {
+    background-color: @hover-bg;
+    color: @hover-fg;
+}
+
+tooltip {
+    border: 2px solid @main-br;
+    border-radius: 10px;
+    background-color: @main-bg;
+}
+
+tooltip > box {
+    padding: 0 6px;
+}
+
+/* ==================== MELHORIAS NO VISUAL APPRENTICE ==================== */
+
+#workspaces button {
+    color: @main-fg;
+}
+
+#workspaces button.active {
+    color: @accent;
+    background-color: rgba(135, 175, 135, 0.12);
+    border-bottom: 2px solid @accent;
+}
+
+#workspaces button:hover {
+    background-color: @hover-bg;
+    color: @accent;
+}
+
+#clock,
+#battery,
+#network,
+#cpu,
+#memory,
+#disk,
+#tray,
+#pulseaudio,
+#bluetooth,
+#backlight {
+    padding: 0 12px;
+    color: @main-fg;
+}
+
+#battery.warning { color: @yellow; }
+#battery.critical { color: @red; }
+#network.disconnected { color: @red; }

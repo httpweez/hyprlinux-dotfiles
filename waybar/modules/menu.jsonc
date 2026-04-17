@@ -1,0 +1,8 @@
+{
+    "custom/menu": {
+        "format": "󰍜",
+        "tooltip": false,
+        "on-click": "if pgrep -x wofi >/dev/null; then pkill wofi; else wofi --show drun --allow-images; fi",
+        "on-click-right": "if pgrep -x wofi >/dev/null; then pkill wofi; else wofi --show run; fi"
+    }
+}

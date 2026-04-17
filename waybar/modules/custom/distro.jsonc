@@ -1,0 +1,7 @@
+{
+    "custom/distro": {
+        "format": "󰣇",
+        "tooltip": "Notificações",
+        "on-click": "swaync-client -t"
+    }
+}
